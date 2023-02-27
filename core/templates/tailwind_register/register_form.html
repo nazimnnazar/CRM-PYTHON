@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body>
+    <form class="max-w-md mx-auto mt-8">
+        <div class="mb-6">
+          <label for="Name" class="block text-gray-700 font-bold mb-2">Name</label>
+          <input type="text" id="Name" name="Name" class="border border-gray-400 p-2 w-full" required>
+        </div>
+      
+        <div class="mb-6">
+          <label for="fatherName" class="block text-gray-700 font-bold mb-2">Father's Name</label>
+          <input type="text" id="fatherName" name="fatherName" class="border border-gray-400 p-2 w-full" required>
+        </div>
+      
+        <div class="mb-6">
+          <label for="dob" class="block text-gray-700 font-bold mb-2">Date of Birth</label>
+          <input type="date" id="dob" name="dob" class="border border-gray-400 p-2 w-full" required>
+        </div>
+      
+        <div class="mb-6">
+          <label for="contactNumber" class="block text-gray-700 font-bold mb-2">Contact Number</label>
+          <input type="tel" id="contactNumber" name="contactNumber" class="border border-gray-400 p-2 w-full" required>
+        </div>
+      
+        <div class="mb-6">
+          <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+          <input type="email" id="email" name="email" class="border border-gray-400 p-2 w-full" required>
+        </div>
+      
+        <div class="mb-6">
+          <label for="address" class="block text-gray-700 font-bold mb-2">Address</label>
+          <textarea id="address" name="address" class="border border-gray-400 p-2 w-full" required></textarea>
+        </div>
+      
+        <div class="mb-6">
+          <label for="image" class="block text-gray-700 font-bold mb-2">Upload Image</label>
+          <input type="file" id="image" name="image" class="border border-gray-400 p-2 w-full" required>
+        </div>
+      
+        <div class="mb-6">
+          <label for="pdf" class="block text-gray-700 font-bold mb-2">Upload PDF</label>
+          <input type="file" id="pdf" name="pdf" class="border border-gray-400 p-2 w-full" required>
+        </div>
+      
+        <div class="mb-6">
+          <label for="altContactNumber" class="block text-gray-700 font-bold mb-2">Alternative Contact Number</label>
+          <input type="tel" id="altContactNumber" name="altContactNumber" class="border border-gray-400 p-2 w-full">
+        </div>
+      
+        <div class="mb-6">
+          <label for="dropdown" class="block text-gray-700 font-bold mb-2">Dropdown Box</label>
+          <select id="dropdown" name="dropdown" class="border border-gray-400 p-2 w-full" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+          </select>
+        </div>
+      
+        <div class="mb-6">
+          <button type="submit" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-400">Register</button>
+        </div>
+    </form>
+</body>
+</html>

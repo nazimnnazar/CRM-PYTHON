@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %} {% endblock %}| Scuba diving</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+<header>
+  <nav>
+    <div class="logo">
+      <a href="/">Scuba diving</a>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+  </nav>
+</header>
+<body>
+  
+
+{% block content %}
+{% endblock %}
+<style>
+    header {
+    height: 80px;
+    background-color: #333;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+  }
+  .logo a {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search input[type="text"] {
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+  }
+  
+  .search button[type="submit"] {
+    width: 40px;
+    height: 30px;
+    background-color: #555;
+    border: none;
+    border-radius: 15px;
+    margin-left: 10px;
+    color: #fff;
+  }
+  
+  .search button[type="submit"]:hover {
+    background-color: #777;
+  }
+  
+  </style>
+</body>
+</html>

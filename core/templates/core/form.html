@@ -1,0 +1,87 @@
+
+{% extends 'core/base.html' %}
+{% block title %} Student Form {% endblock %} 
+{% block content %}
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="container">
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+        <h2>Student  <small>Details</small></h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+                        {{form.student_name}}
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+                        {{form.student_father_name}}
+                    </div>
+				</div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+                        <!-- <label for="inputDate" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10"> -->
+                          <!-- <input type="date" class="form-control"> -->
+                          {{form.date_of_birth}}
+                    <!-- </div> -->
+                        
+                    </div>
+				</div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+                        {{form.address}}
+                    </div>
+				</div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+                        {{form.contact_number}}
+                    </div>
+				</div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+                        {{form.alternative_contact_number}}
+                    </div>
+				</div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+                        {{form.relastion_with_contact_person}}
+                    </div>
+				</div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+                        {{form.email}}
+                    </div>
+				</div>
+			</div>
+            <hr class="colorgraph">
+            <h4>Document required for applying for a permit</h4>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="form-group">
+                    {{form.student_image}}
+                </div>
+            </div>
+            <br>
+			<div class="form-group">
+                {{form.id_idcard}}
+            </div>
+            <div class="form-group">
+                {{form.police_verification}}
+            </div>
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+                    <input type="submit" value="Save" class="btn btn-primary btn-block btn-lg" tabindex="7">
+                </div>
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>
+{% endblock %}

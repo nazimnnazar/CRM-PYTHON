@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'admin_main',
+    'version1',
+    'version2',
 
 ]
 

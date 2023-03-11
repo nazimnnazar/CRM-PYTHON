@@ -11,6 +11,10 @@
         <a href="{% url 'nopermit' %}"><button class="no">No</button></a>
     </div>
 </div>
+<div class="buttons">
+  <a href="{% url 'applicant_form' %}"><button class="yes">Version.1</button></a>
+  <a href="{% url 'version2' %}"><button class="yes">Version2</button></a>
+</div>
 <style>
   .box {
     width: 400px;
@@ -65,7 +69,7 @@
     opacity: 0.8;
   }
   
-  </style>
+</style>
 {% endblock %}
 
 </body>

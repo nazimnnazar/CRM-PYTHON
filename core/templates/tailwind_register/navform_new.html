@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="bg-gray-800">
+		<div class="mx-auto px-4 py-6 flex items-center justify-between">
+			<a href="#" class="text-xl font-semibold text-white">Scuba Diving</a>
+			<div class="relative">
+				<input type="text" class="bg-gray-700 text-white rounded-full px-4 py-2 pr-12" placeholder="Search...">
+				<button class="absolute right-0 top-0 mt-3 mr-4">
+					<svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.9648 14.4648L20.1213 18.6213C20.5118 19.0118 20.5118 19.6447 20.1213 20.0352C19.7307 20.4256 19.098 20.4256 18.7075 20.0352L14.551 15.8787C14.1605 15.4882 14.1605 14.8554 14.551 14.4648L18.7075 10.3083C19.098 9.9178 19.7307 9.9178 20.1213 10.3083C20.5118 10.6987 20.5118 11.3316 20.1213 11.7221L15.9648 14.4648ZM10.5 18C7.46243 18 5 15.5376 5 12.5C5 9.46243 7.46243 7 10.5 7C13.5376 7 16 9.46243 16 12.5C16 15.5376 13.5376 18 10.5 18Z" fill="currentColor"/>
+					</svg>
+				</button>
+			</div>
+			<div class="hidden md:flex md:items-center">
+				<a href="#" class="text-white mx-4 hover:text-gray-300">Home</a>
+				<a href="#" class="text-white mx-4 hover:text-gray-300">About</a>
+				<a href="#" class="text-white mx-4 hover:text-gray-300">Contact</a>
+			</div>
+		</div>
+	</nav>
+    <br><br>
+	<!-- <h1 class="text-3xl font-bold my-8 mx-auto max-w-4xl">Welcome to my website</h1>
+	<p class="text-lg my-4 mx-auto max-w-4xl">Here's some content for my website.</p> -->
+    <style>
+		.container {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		form label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		form input[type=text],
+		form input[type=date],
+		form input[type=tel],
+		form input[type=email] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+
+		form input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		form input[type=submit]:hover {
+			background-color: #b354ae;
+		}
+	</style>
+	<div class="container">
+		<h1>Register Form</h1>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="fathername">Father Name:</label>
+			<input type="text" id="fathername" name="fathername" required>
+
+			<label for="dob">Date of Birth:</label>
+			<input type="date" id="dob" name="dob" required>
+
+			<label for="contact">Contact Number:</label>
+			<input type="tel" id="contact" name="contact" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<input type="submit" value="Save">
+		</form>
+	</div>
+</body>
+</html>

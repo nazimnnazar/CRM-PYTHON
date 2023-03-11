@@ -26,4 +26,7 @@ def form_new(request):
     return render(request,'forms-elements.html')
 
 def register_form(request):
-    return render(request,'tailwind_register/register_form.html')
+    return render(request,'tailwind_register/ register_form.html')
+
+def navform(request):
+    return render(request, 'tailwind_register/navform_new.html')
